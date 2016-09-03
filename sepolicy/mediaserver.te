@@ -8,5 +8,4 @@ unix_socket_send(mediaserver, mpdecision, mpdecision)
 # TODO: Investigate the specific type of socket.
 allow mediaserver self:socket create_socket_perms;
 
-allow mediaserver camera:unix_dgram_socket sendto;
-allow mediaserver camera_data_file:sock_file write;
+allow cameraserver system_file:file execmod;
