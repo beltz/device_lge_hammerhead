@@ -361,6 +361,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.HAL3.enabled=1
 
+# This should fix the HW encoder and camcorder glitch
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.stagefright.codecremote=false
+
 # Input resampling configuration
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.input.noresample=1
